@@ -1,0 +1,6 @@
+.buttonBlack {
+    background-color: $color-black !important;
+    &:hover {
+        background-color: $color-gray-600 !important;
+    }
+}

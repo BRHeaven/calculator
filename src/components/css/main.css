@@ -29,4 +29,69 @@ ul {
 
 .nav-link {
   padding: 0;
+}
+
+.calculator {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  background-color: #212121;
+  padding: 20px;
+}
+.calculator .show {
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  background-color: #616161;
+}
+.calculator .show .numbers {
+  text-align: end;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+.calculator .show .result {
+  text-align: start;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.calculator .interact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+.calculator .interact div {
+  height: 70px;
+  background-color: #424242;
+  cursor: pointer;
+}
+.calculator .interact div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.calculator .interact div:hover {
+  background-color: #00E676;
+}
+.calculator .interact div:hover p {
+  color: #000000;
+}
+
+.buttonBlack {
+  background-color: #000000 !important;
+}
+.buttonBlack:hover {
+  background-color: #757575 !important;
+}
+
+.App {
+  background-color: #9E9E9E;
+  position: relative;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
