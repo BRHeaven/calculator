@@ -45,28 +45,36 @@ ul {
   margin-bottom: 10px;
   background-color: #616161;
 }
-.calculator .show .numbers {
+.calculator .show #numbers {
+  display: block;
+  width: 100%;
   text-align: end;
   font-size: 1.1em;
   letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000000;
 }
-.calculator .show .result {
+.calculator .show #input {
   text-align: start;
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000000;
 }
 .calculator .interact {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3px;
 }
-.calculator .interact div {
+.calculator .interact button {
   height: 70px;
   background-color: #424242;
   cursor: pointer;
 }
-.calculator .interact div p {
+.calculator .interact button p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,10 +84,10 @@ ul {
   text-transform: uppercase;
   font-weight: bolder;
 }
-.calculator .interact div:hover {
+.calculator .interact button:hover {
   background-color: #00E676;
 }
-.calculator .interact div:hover p {
+.calculator .interact button:hover p {
   color: #000000;
 }
 
